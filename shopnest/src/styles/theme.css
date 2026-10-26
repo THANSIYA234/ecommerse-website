@@ -1,0 +1,33 @@
+:root {
+  --forest-900: #0d2b21;
+  --forest-800: #123a2c;
+  --forest-700: #1b5540;
+  --forest-600: #2b7355;
+  --forest-100: #e6efe9;
+  --sage-200: #cfe0d5;
+  --sage-100: #eaf2ed;
+
+  --cream: #faf8f4;
+  --sand: #f3ede2;
+  --surface: #ffffff;
+
+  --ink: #16211c;
+  --muted: #67776e;
+  --line: #e6e6e0;
+
+  --amber: #f0a92c;
+  --rose: #b4534a;
+  --rose-soft: #f6e7e4;
+
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  --shadow-sm: 0 1px 2px rgba(13, 43, 33, 0.06);
+  --shadow: 0 8px 24px rgba(13, 43, 33, 0.08);
+  --shadow-lg: 0 18px 44px rgba(13, 43, 33, 0.14);
+
+  --container: 1240px;
+  --header-height: 132px;
+}

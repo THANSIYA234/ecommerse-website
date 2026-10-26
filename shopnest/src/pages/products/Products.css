@@ -1,0 +1,74 @@
+.shop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.sort-select {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+}
+.sort-select select {
+  border: none;
+  background: none;
+  outline: none;
+  font: inherit;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  padding-right: 4px;
+}
+
+.active-filters {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+  font-size: 0.86rem;
+  color: var(--muted);
+}
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px 5px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--forest-100);
+  color: var(--forest-800);
+  font-weight: 600;
+}
+.filter-pill button {
+  display: grid;
+  place-items: center;
+  border: none;
+  background: rgba(18, 58, 44, 0.1);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  color: inherit;
+}
+.filter-pill button:hover {
+  background: rgba(18, 58, 44, 0.22);
+}
+.active-filters-clear {
+  border: none;
+  background: none;
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 4px;
+}
+.active-filters-clear:hover {
+  color: var(--ink);
+}

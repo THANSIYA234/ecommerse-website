@@ -1,0 +1,109 @@
+.category-showcase {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  gap: 4px;
+  padding: 20px 24px;
+  box-sizing: border-box;
+  background: #eeece7;
+  border: 1px solid rgba(116, 127, 120, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(25, 45, 35, 0.08);
+}
+
+.category-showcase__item {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 2px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #102d23;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.category-showcase__item:hover {
+  transform: translateY(-3px);
+  background: #f5f1e9;
+}
+
+.category-showcase__bubble {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #f5e7e1;
+}
+
+.category-showcase__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .category-showcase {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 2px;
+    padding: 14px 4px;
+  }
+
+  .category-showcase__bubble {
+    width: 30px;
+    height: 30px;
+  }
+
+  .category-showcase__item {
+    font-size: 9px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    gap: 6px;
+  }
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.category-filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.category-filter-chip:hover {
+  border-color: var(--forest-600);
+  color: var(--forest-800);
+}
+.category-filter-chip--active {
+  background: var(--forest-800);
+  border-color: var(--forest-800);
+  color: #fff;
+}
+.category-filter-count {
+  font-size: 0.76rem;
+  opacity: 0.75;
+}

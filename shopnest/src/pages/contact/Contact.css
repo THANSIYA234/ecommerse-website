@@ -1,0 +1,148 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 36px;
+  align-items: start;
+}
+.contact-info {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.contact-info h2,
+.contact-form h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 22px;
+}
+.contact-info-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.contact-info-icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--forest-100);
+  color: var(--forest-700);
+  flex-shrink: 0;
+}
+.contact-info-list div {
+  display: flex;
+  flex-direction: column;
+}
+.contact-info-list strong {
+  font-size: 0.92rem;
+}
+.contact-info-list a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+.contact-info-list a:hover {
+  color: var(--forest-700);
+  text-decoration: underline;
+}
+.contact-info-list span {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.contact-info-card {
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  padding: 16px;
+  border-radius: var(--radius);
+  background: var(--sand);
+  color: #4a4136;
+  font-size: 0.86rem;
+}
+.contact-info-card svg {
+  flex-shrink: 0;
+  color: #8a6b2f;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 32px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.field label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--cream);
+  font: inherit;
+  font-size: 0.95rem;
+  color: var(--ink);
+  transition:
+    border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+.field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--forest-600);
+  background: #fff;
+}
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"] {
+  border-color: var(--rose);
+  background: #fdf7f6;
+}
+.field-error {
+  font-size: 0.82rem;
+  color: var(--rose);
+  font-weight: 600;
+}
+
+.form-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.form-alert--success {
+  background: var(--forest-100);
+  color: var(--forest-800);
+}
+.form-alert--error {
+  background: var(--rose-soft);
+  color: var(--rose);
+}

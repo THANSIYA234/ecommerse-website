@@ -1,0 +1,77 @@
+.not-found {
+  width: 100%;
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+/* 404 number */
+.not-found-code {
+  margin-bottom: 12px;
+  color: var(--forest-700);
+  font-size: clamp(5rem, 12vw, 8rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.06em;
+}
+
+/* Main heading */
+.not-found-title {
+  margin-bottom: 14px;
+  color: var(--forest-900);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Description */
+.not-found-body {
+  max-width: 460px;
+  margin: 0 auto;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Action buttons */
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.not-found-actions .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.not-found-actions .button:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+  .not-found {
+    padding: 32px 12px;
+  }
+
+  .not-found-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .not-found-actions .button {
+    width: 100%;
+  }
+}
