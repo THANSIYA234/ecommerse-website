@@ -173,30 +173,73 @@
 
 @media (max-width: 560px) {
   .footer {
-    margin-top: 48px;
+    margin-top: 36px;
   }
 
   .footer-top {
     grid-template-columns: 1fr;
-    gap: 28px;
-    padding-block: 36px 26px;
+    gap: 18px;
+    padding-block: 26px 18px;
+  }
+
+  .brand-footer .brand-text strong {
+    font-size: 1rem;
+  }
+
+  .footer-blurb,
+  .footer-column a,
+  .footer-column-newsletter p,
+  .footer-contact a {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 0.82rem;
+  }
+
+  .footer-column ul {
+    gap: 8px;
   }
 
   .footer-newsletter {
     flex-direction: column;
     align-items: stretch;
-    padding: 10px 12px;
-    border-radius: 18px;
+    padding: 8px 10px;
+    border-radius: 14px;
+    margin-top: 12px;
+  }
+
+  .footer-newsletter input {
+    font-size: 0.8rem;
   }
 
   .footer-newsletter button {
     width: 100%;
     border-radius: 999px;
-    height: 42px;
+    height: 36px;
+  }
+
+  .footer-social {
+    margin-top: 14px;
+  }
+
+  .footer-social a {
+    width: 30px;
+    height: 30px;
   }
 
   .footer-bottom-inner {
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    padding-block: 14px;
+    font-size: 0.72rem;
+  }
+
+  .footer-payments li {
+    padding: 3px 8px;
+    font-size: 0.66rem;
   }
 }
