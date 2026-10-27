@@ -205,6 +205,12 @@
   }
 }
 
+@media (max-width: 560px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* rating*/
 
 .rating-star {
