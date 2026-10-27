@@ -12,6 +12,7 @@ import {
 import "./Navbar.css";
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useRef, useState } from "react";
+import { useCart } from "../../hooks/useCart";
 
 const NAV_LINKS = [
   { to: "/", label: "Home", pathname: "/", search: "" },
@@ -37,7 +38,7 @@ const NAV_LINKS = [
   { to: "/contact", label: "Contact", pathname: "/contact", search: "" },
 ];
 export default function Navbar() {
-  //  const { itemCount } = useCart();
+  const { itemCount } = useCart();
   const navigate = useNavigate();
   const location = useLocation();
   const searchRef = useRef(null);
@@ -131,7 +132,7 @@ export default function Navbar() {
             <Link to="/cart" className="navbar-action navbar-action--cart">
               <ShoppingBag size={20} />
               <span>Cart</span>
-              {/* {itemCount > 0 && <span className="cart-badge">{itemCount}</span>} */}
+              {itemCount > 0 && <span className="cart-badge">{itemCount}</span>}
             </Link>
           </div>
         </div>

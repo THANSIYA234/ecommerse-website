@@ -146,3 +146,16 @@
   background: var(--rose-soft);
   color: var(--rose);
 }
+
+@media (max-width: 960px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact-form,
+  .contact-info {
+    padding: 22px;
+  }
+}

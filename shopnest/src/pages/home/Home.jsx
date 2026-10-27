@@ -114,7 +114,9 @@ export default function Home() {
         </div>
       </section>
       <section className="category-showcase-section">
-        <CategoryShowcase categories={CATEGORIES} />
+        <div className="container">
+          <CategoryShowcase categories={CATEGORIES} />
+        </div>
       </section>
       <section className="section container">
         <header className="section__header">

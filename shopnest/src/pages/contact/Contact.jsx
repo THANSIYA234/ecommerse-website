@@ -108,7 +108,7 @@ export default function Contact() {
               </span>
               <div>
                 <strong>Phone</strong>
-                <a href="tel:+15550145678">+1 (555) 014-5678</a>
+                <a href="tel:+917510162040">+917510162040</a>
               </div>
             </li>
             <li>
@@ -126,7 +126,7 @@ export default function Contact() {
               </span>
               <div>
                 <strong>Studio</strong>
-                <span>221 Market Lane, Portland, OR</span>
+                <span>Mannarkad palakkad kerala</span>
               </div>
             </li>
           </ul>
@@ -134,8 +134,8 @@ export default function Contact() {
           <div className="contact-info-card">
             <Truck size={20} />
             <p>
-              Free shipping on orders over $50, and 30 days to change your mind
-              on everything else.
+              Free shipping on orders over ₹1000, and 30 days to change your
+              mind on everything else.
             </p>
           </div>
         </aside>

@@ -57,8 +57,9 @@ if (!remoteApiUrl) {
     const match = path.match(/\/products\/([^/]+)$/);
 
     if (config.method === "get" && match) {
+      const routeId = decodeURIComponent(match[1]);
       const product = products.find(
-        (p) => p.id === decodeURIComponent(match[1]),
+        (p) => String(p.id) === routeId || p.id === Number(routeId),
       );
 
       if (!product) {

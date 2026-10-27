@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Check, Heart, ShoppingBag } from "lucide-react";
 import Rating from "./Rating";
-// import { useCart } from '../hooks/useCart';
+import { useCart } from "../../hooks/useCart";
 import "./product.css";
 import { discountPercent, formatCurrency } from "../../utils/format";
 
 export default function ProductCard({ product }) {
-  //   const { addItem } = useCart();
+  const { addItem } = useCart();
   const [justAdded, setJustAdded] = useState(false);
   const [saved, setSaved] = useState(false);
   const timerRef = useRef(null);
@@ -19,7 +19,7 @@ export default function ProductCard({ product }) {
   const isLowStock = product.stock > 0 && product.stock <= 10;
 
   const handleAddToCart = () => {
-    // addItem(product);
+    addItem(product);
     setJustAdded(true);
     clearTimeout(timerRef.current);
     timerRef.current = setTimeout(() => setJustAdded(false), 1600);

@@ -107,3 +107,33 @@
   font-size: 0.76rem;
   opacity: 0.75;
 }
+
+@media (max-width: 1100px) {
+  .category-showcase {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .category-showcase {
+    transform: none;
+    margin-bottom: 0;
+    border-radius: var(--radius);
+  }
+}
+
+@media (max-width: 560px) {
+  .category-showcase {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 16px 10px;
+  }
+
+  .category-showcase__bubble {
+    width: 52px;
+    height: 52px;
+  }
+
+  .category-showcase__label {
+    font-size: 0.78rem;
+  }
+}

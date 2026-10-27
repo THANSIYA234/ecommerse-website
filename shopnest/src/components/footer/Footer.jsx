@@ -72,8 +72,8 @@ export default function Footer() {
             <a href="mailto:hello@shopnest.example">
               <Mail size={16} /> hello@shopnest.example
             </a>
-            <a href="tel:+15550145678">
-              <Phone size={16} /> +1 (555) 014-5678
+            <a href="tel:+917510162040">
+              <Phone size={16} /> +917510162040
             </a>
           </div>
           <div className="footer-social">
@@ -152,7 +152,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <div className="container footer-bottom-inner">
           <p>© {CURRENT_YEAR} ShopNest. All rights reserved.</p>
-          <ul className="footer-payments" aria-label="Accepted payment methods">
+          <ul className="footer-payments">
             {["Visa", "Mastercard", "Amex", "PayPal", "Apple Pay"].map(
               (method) => (
                 <li key={method}>{method}</li>

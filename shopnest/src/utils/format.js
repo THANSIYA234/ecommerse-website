@@ -1,6 +1,7 @@
-const currencyFormatter = new Intl.NumberFormat("en-US", {
+const currencyFormatter = new Intl.NumberFormat("en-IN", {
   style: "currency",
-  currency: "USD",
+  currency: "INR",
+  maximumFractionDigits: 0,
 });
 
 export const formatCurrency = (value) => currencyFormatter.format(value ?? 0);
