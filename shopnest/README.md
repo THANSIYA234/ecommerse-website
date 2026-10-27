@@ -1,16 +1,47 @@
-# React + Vite
+# ShopNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopNest is a modern e-commerce storefront demo built with React and Vite. It includes a product catalog, category browsing, product detail pages, cart functionality, and responsive storefront styling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive home page with hero section and category highlights
+- Product listing with filtering and sorting
+- Product detail page with quantity controls and related products
+- Shopping cart with subtotal, tax, and checkout summary
+- Contact page and newsletter section
+- Demo product data and local cart state
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Lucide React icons
+- CSS modules / custom CSS styling
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Install dependencies
+
+npm install
+
+### Run the app locally
+
+npm run dev
+
+### Build for production
+
+npm run build
+
+## Project Structure
+
+- src/App.jsx — route setup
+- src/pages — page-level views
+- src/components — reusable UI sections
+- src/data/products.js — demo product catalog
+- src/hooks — custom React hooks
+- src/utils/format.js — currency and formatting helpers
+
+## Notes
+
+This project uses demo product data and local cart behavior for a storefront experience. It is suitable for UI exploration, frontend learning, and ecommerce mockups.
