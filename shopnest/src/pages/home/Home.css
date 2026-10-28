@@ -197,7 +197,7 @@
 
 @media (max-width: 560px) {
   .hero {
-    min-height: 430px;
+    min-height: 390px;
     background-position: center top;
   }
 
@@ -206,6 +206,9 @@
   }
 
   .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 12px 0 8px;
   }
@@ -221,21 +224,7 @@
   }
 
   .hero-points {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .hero-points li {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid rgba(114, 132, 118, 0.2);
-    padding-right: 0;
-    padding-bottom: 8px;
-  }
-
-  .hero-points li:last-child {
-    border-bottom: none;
+    display: none;
   }
 
   .promo {

@@ -251,6 +251,24 @@
 }
 
 @media (max-width: 560px) {
+  .announcement-bar-inner {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 8px 12px;
+    text-align: center;
+  }
+
+  .announcement-bar-inner span {
+    display: inline-flex;
+    max-width: 100%;
+  }
+
+  .announcement-bar-inner span:not(:first-child) {
+    display: none;
+  }
+
   .brand-text small {
     display: none;
   }

@@ -182,43 +182,23 @@
     padding-block: 26px 18px;
   }
 
+  .footer-column,
+  .footer-column-newsletter {
+    display: none;
+  }
+
+  .footer-brand {
+    width: 100%;
+  }
+
   .brand-footer .brand-text strong {
     font-size: 1rem;
   }
 
   .footer-blurb,
-  .footer-column a,
-  .footer-column-newsletter p,
   .footer-contact a {
     font-size: 0.78rem;
     line-height: 1.5;
-  }
-
-  .footer-column h3 {
-    margin-bottom: 10px;
-    font-size: 0.82rem;
-  }
-
-  .footer-column ul {
-    gap: 8px;
-  }
-
-  .footer-newsletter {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 8px 10px;
-    border-radius: 14px;
-    margin-top: 12px;
-  }
-
-  .footer-newsletter input {
-    font-size: 0.8rem;
-  }
-
-  .footer-newsletter button {
-    width: 100%;
-    border-radius: 999px;
-    height: 36px;
   }
 
   .footer-social {
